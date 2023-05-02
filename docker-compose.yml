@@ -8,6 +8,6 @@ services:
       - ./configurations:/configurations
     environment:
       dashboard-host-url:  app.devaten.com
-      dashboard-username:  rahulmore0304@gmail.com
-      dashboard-password:  123456
+      dashboard-username:  Enter dashboard username. (Email address which used for signed in to dashboard.)
+      dashboard-password:  Enter dashboard password. (Password which used for signed in to dashboard.)
       spring.activemq.broker-url: tcp://18.192.220.39:61616?jms.prefetchPolicy.all=100&jms.redeliveryPolicy.maximumRedeliveries=1
