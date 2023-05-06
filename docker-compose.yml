@@ -1,13 +1,12 @@
 version: '3.8'
 services:
   saas-devaten-agent-container:
-    image: devaten/saas-devaten-agent:1.0.0
+    image: devaten/saas-devaten-agent:latest
     ports:
       - "8111:8111"
     volumes:
-      - ./configurations:/configurations
+      - ./Configurations/h2/devaten_agentapp_1_0_0.mv:/opt/h2-data/devaten_agentapp_1_0_0.mv:rw
+      - ./Configurations/.devaten/.data:/Configurations/.devaten/.data:rw
     environment:
-      dashboard-host-url:  https://app.devaten.com
-      dashboard-username:  Enter dashboard username. (Email address which used for signed in to dashboard.)
-      dashboard-password:  Enter dashboard password. (Password which used for signed in to dashboard.)
-      spring.activemq.broker-url: tcp://18.192.220.39:61616?jms.prefetchPolicy.all=100&jms.redeliveryPolicy.maximumRedeliveries=1
+      dashboard-username:  rahulmore0304@gmail.com
+      dashboard-password:  123456
