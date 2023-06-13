@@ -8,5 +8,5 @@ services:
       - ./Configurations/h2/devaten_agentapp_1_0_0.mv:/opt/h2-data/devaten_agentapp_1_0_0.mv:rw
       - ./Configurations/.devaten/.data:/Configurations/.devaten/.data:rw
     environment:
-      dashboard-username:  rahulmore0304@gmail.com
-      dashboard-password:  123456
+      dashboard-username:  Enter_Your_Dashboard_Login_Email
+      dashboard-password:  Enter_Your_Dashboard_Login_Password
